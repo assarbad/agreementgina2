@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <style type="text/css">
+  <!--
+  body { margin:1em; font-family:Arial; font-size:10pt; background-color:white; color:black; }
+  h1   { font-size:14pt; text-align:center; }
+  h2   { font-size:13pt; text-align:center; }
+  p    { text-align:justify; }
+  tt.option { background-color:#CCCCCC; padding:0pt; border:1px solid gray; }
+  a:link    { font-weight:bold; color:blue; }
+  a:visited { font-weight:bold; color:blue; }
+  a:hover   { font-weight:bold; color:blue; }
+  a:active  { font-weight:bold; color:blue; text-decoration:underline; }
+  a:focus   { font-weight:bold; color:blue; text-decoration:underline; }
+  img       { border:1px dashed gray; padding: 0.2em; }
+  -->
+  </style>
+ <title>Registry settings</title>
+</head>
+<body>
+<h1><a name="top">Registry settings</a></h1>
+<p style="text-align:center;"><img src="images/Registry_Settings01.png" alt="Registry settings" /></p>
+<h2>Meaning of the settings</h2>
+<p>The registry settings correspond to the <a href="configuration.html#AllSettings">options</a>
+in the configuration dialog. It follows a description of the valid settings in the registry
+key of the GINA: <tt>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\AgreementGINA</tt>.<br />
+The GINA will be notified as soon as you change some setting. In this case it
+will immediately apply the new setting!</p>
+<ul>
+<li><tt class="option">AdminSkips</tt><a name="a01">&nbsp;</a>(REG_DWORD):<br />
+Valid values are 0 (deactivated) and 1 (activated).<br />
+<i>Sets whether the admin will be shown the agreement or the news. Default is: deactivated.</i>
+  </li>
+<li><tt class="option">AllowOnlyGuest</tt><a name="a02">&nbsp;</a>(REG_DWORD):<br />
+Valid values are 0 (deactivated) and 1 (activated).<br />
+<i>Limits the logon to admins and the specified account only. The specified account
+is being logged on immediately. Logging off results in logging on that account once
+more (except if overridden).</i><br />
+<span style="color:red; font-weight:bold;">IMPORTANT:</span> combining this mode with
+a restriction for the "guest" account (such as "deny local logon") will result in
+an infinite loop of reboots which can be interrupted by the override sequence F1.
+Because it is stupid to put a certain account as guest and deny it to logon this
+is an incompatibility which will not be removed in future!!!
+  </li>
+<li><tt class="option">BtnNoText</tt><a name="a03">&nbsp;</a>(REG_SZ):<br />
+Valid values: any text no longer than 15 characters (it should fit the button width).<br />
+<i>Sets text of the "No" button in the the agreement dialog.</i><br />
+Note: you may use the &amp; to create keyboard shortcuts to the buttons/checkbox.
+Prepend the intended letter with the &amp; just like this: <tt>&amp;Yes</tt> gives <tt><u>Y</u>es</tt>.
+  </li>
+<li><tt class="option">BtnYesText</tt><a name="a04">&nbsp;</a>(REG_SZ):<br />
+Valid values: any text no longer than 15 characters (it should fit the button width).<br />
+<i>Sets text of the "Yes" button in the the agreement dialog.</i><br />
+Note: you may use the &amp; to create keyboard shortcuts to the buttons/checkbox.
+Prepend the intended letter with the &amp; just like this: <tt>&amp;Yes</tt> gives <tt><u>Y</u>es</tt>.
+  </li>
+<li><tt class="option">CheckBoxText</tt><a name="a05">&nbsp;</a>(REG_SZ):<br />
+Valid values: any text no longer than 150 characters (it should fit the checkbox width).<br />
+<i>Sets text of the checkbox in the the agreement dialog.</i><br />
+Note: you may use the &amp; to create keyboard shortcuts to the buttons/checkbox.
+Prepend the intended letter with the &amp; just like this: <tt>&amp;Yes</tt> gives <tt><u>Y</u>es</tt>.
+  </li>
+<li><tt class="option">DisableLockWorkstation</tt><a name="a06">&nbsp;</a>(REG_DWORD):<br />
+Valid values are 0 (default behavior) and 1 (locking disabled).<br />
+<i>See the more complete <a href="configuration.html#DisableLock">description</a>.</i>
+  </li>
+<li><tt class="option">DisableChangePassword</tt><a name="a07">&nbsp;</a>(REG_DWORD):<br />
+Valid values are 0 (default behavior) and 1 (locking disabled).<br />
+<i>See the more complete <a href="configuration.html#DisableChpasswd">description</a>.</i>
+  </li>
+<li><tt class="option">DisableTaskMgr</tt><a name="a08">&nbsp;</a>(REG_DWORD):<br />
+Valid values are 0 (default behavior) and 1 (locking disabled) or 2 (task manager replaced).<br />
+<i>See the more complete <a href="configuration.html#DisableTaskman">description</a>.</i>
+  </li>
+<li><tt class="option">HTML_file</tt><a name="a09">&nbsp;</a>(REG_SZ):<br />
+Valid values: any URL (e.g. file://... or http://...) or HTML markup code.<br />
+<i>Sets the agreement to show in the agreement dialog.</i>
+  </li>
+<li><tt class="option">ListenPort</tt><a name="a10">&nbsp;</a>(REG_DWORD):<br />
+Valid values are 0 (disable this feature) to 65535.<br />
+<i>This specifies the port on which user information should be returned, or to
+deactivate this feature at all.</i>
+  </li>
+<li><tt class="option">MaintenanceMode</tt><a name="a11">&nbsp;</a>(REG_DWORD):<br />
+Valid values are 0 (deactivated) and 1 (activated).<br />
+<i>If enabled, the user will be shown a maintenance notice and denied to logon. Only
+admins are allowed to logon then.</i>
+  </li>
+<li><tt class="option">MaintenanceText</tt><a name="a12">&nbsp;</a>(REG_SZ):<br />
+Valid values: any URL (e.g. file://... or http://...) or HTML markup code.<br />
+<i>Sets the agreement to show in the maintenance notice.</i>
+  </li>
+<li><tt class="option">NewsActive</tt><a name="a13">&nbsp;</a>(REG_DWORD):<br />
+Valid values are 0 (deactivated) and 1 (activated).<br />
+<i>If enabled, the user will see a notice with news or urgent information. Whatever
+you like, actually.</i>
+  </li>
+<li><tt class="option">NewsText</tt><a name="a14">&nbsp;</a>(REG_SZ):<br />
+Valid values: any URL (e.g. file://... or http://...) or HTML markup code.<br />
+<i>Sets the agreement to show in the news notice.</i>
+  </li>
+<li><tt class="option">ReplacementTaskMgr</tt><a name="a15">&nbsp;</a>(REG_SZ):<br />
+Valid values: a path to an existing executable file with the replacement for the task manager.<br />
+<i>See the more complete <a href="configuration.html#DisableTaskman">description</a>.</i>
+  </li>
+<li><tt class="option">ShowTimer</tt><a name="a16">&nbsp;</a>(REG_DWORD):<br />
+Valid values are 0 (deactivated) and 1 (activated).<br />
+<i>Activates or deactivates the timer being shown before the user is allowed to
+proceed. If this is 1 and <tt>TimerDuration</tt> is 0 the agreement dialog will
+not be shown.</i>
+  </li>
+<li><tt class="option">TimerDuration</tt><a name="a17">&nbsp;</a>(REG_DWORD):<br />
+Valid values range from 0 to 3600. It is the timout period in seconds.<br />
+<i>Sets the timeout duration. If this is 0 and <tt>ShowTimer</tt> is 1 the
+agreement dialog will not be shown.</i>
+  </li>
+</ul>
+<p>There are three more special values. These values are somewhat volatile. This means,
+if you set them they will disappear from the aforementioned location. However, this
+does not mean they are gone. It means they have been moved to a safer location:
+the so called password-stash of the system. Special rights are required to access
+this information, additionally it is being encrypted.</p>
+<ul>
+<li><tt class="option">GuestDomain</tt><a name="a18">&nbsp;</a>(REG_SZ):<br />
+Valid values: valid domain name for the specified user account. This value is optional
+as there may be no domain. Local accounts need not to supply the local computer name.
+  </li>
+<li><tt class="option">GuestName</tt><a name="a19">&nbsp;</a>(REG_SZ):<br />
+Valid values: valid user account name.
+  </li>
+<li><tt class="option">GuestPassword</tt><a name="a20">&nbsp;</a>(REG_SZ):<br />
+Valid values: valid password corresponding to the user account. There is one
+<b>limitation</b>: the password MUST NOT be empty.
+  </li>
+</ul>
+</ul>
+<pre style="padding:1em; background-color:#CCCCCC;">;Default settings for AgreementGINA2
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\AgreementGINA]
+"AdminSkips"=dword:00000001
+"AllowOnlyGuest"=dword:00000000
+"BtnNoText"="&No"
+"BtnYesText"="&Yes"
+"CheckBoxText"=" I hereby &accept the agreement and confirm to be authorized! "
+"DisableChangePassword"=dword:00000000
+"DisableLockWorkstation"=dword:00000000
+"DisableTaskMgr"=dword:00000002
+"HTML_file"=""
+"ListenPort"=dword:00000000
+"MaintenanceMode"=dword:00000001
+"MaintenanceText"="Freshly installed GINA"
+"NewsActive"=dword:00000001
+"NewsText"=""
+"ReplacementTaskMgr"="SimpTaskman.exe"
+"ShowTimer"=dword:00000001
+"TimerDuration"=dword:00000000</pre>
+<p><a href="DefaultSettings.txt">Download</a> the registry script with default settings (right-click + "Save as"). Save the file with extension ".reg".</p>
+</body>
+</html>

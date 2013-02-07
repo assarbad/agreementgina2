@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <style type="text/css">
+  <!--
+  body { margin:1em; font-family:Arial; font-size:9pt; background-color:white; color:black; }
+  h1   { text-align:center; font-size:14pt; font-weight:bold; }
+  h2   { text-align:center; font-size:11pt; font-weight:bold; }
+  p    { text-align:justify; }
+  a:link    { font-weight:bold; color:blue; }
+  a:visited { font-weight:bold; color:blue; }
+  a:hover   { font-weight:bold; color:blue; }
+  a:active  { font-weight:bold; color:blue; text-decoration:underline; }
+  a:focus   { font-weight:bold; color:blue; text-decoration:underline; }
+  -->
+  </style>
+ <title>AgreementGINA2: Brief configuration help</title>
+</head>
+<body>
+<h1>AgreementGINA2: configuration help</h1>
+<p>Wanna back to the <a href="./%231009">about dialog</a>?<br /></p>
+<p>This is a very short description of the configuration options in
+the dialog which led you here.</p>
+<ol>
+<li><u><b>Settings for the agreement dialog</b></u>
+    <ul>
+      <li><b>Agreement URL</b> lets you set the (HTML) file to show as agreement.Alternatively you may give HTML content here. Note, that the first character <b>must</b> be "&lt;" and it must not contain linebreaks.</li>
+      <li><b>Show timer</b> must be checked to show the timer countdown if duration is not zero. If the duration is zero and this is checked, the agreement dialog will not be shown.</li>
+      <li>The <b>timer duration</b> (the edit field) can be zero (see "Show timer" above) or up to 3600 seconds.</li>
+    </ul>
+    <div><span style="color:red; font-weight:bold;">Once more:</span> checking "Show timer" and setting
+    the "timer duration" to zero will completely turn off the agreement dialog!</div>
+    <div><span style="color:red; font-weight:bold;">Note:</span> The URL field will show with blue background if it is being recognized as a URL,
+    but with white background if it is recognized as HTML content!</div>
+  </li>
+<li><u><b>News message and maintenance mode</b></u>
+    <ul>
+      <li><b>News URL</b> sets the HTML file to be shown as news (if activated). Alternatively you may give HTML content here. Note, that the first character <b>must</b> be "&lt;" and it must not contain linebreaks.</li>
+      <li><b>Maintenan. URL</b>  sets the HTML file to be shown as maintenance notice (if activated). Alternatively you may give HTML content here. Note, that the first character <b>must</b> be "&lt;" and it must not contain linebreaks.</li>
+      <li><b>Maintenance mode active</b> activates or deactivates the maintenance mode.</li>
+      <li><b>News message active</b> activates or deactivates showing of the news message.</li>
+    </ul>
+    <div><span style="color:red; font-weight:bold;">Note:</span> The URL fields will show with blue background if it is being recognized as a URL,
+    but with white background if it is recognized as HTML content!</div>
+  </li>
+<li><u><b>Restrictions for non-administrative users</b></u><br />
+    These options handle whether the respective buttons are active or
+	not in the security dialog (the one you see when being logged on and
+	pressing Ctrl+Alt+Del).
+  </li>
+<li><u><b>Caption of controls (agreement dialog)</b></u><br />
+    These options set the texts shown for the <b>Yes</b> (proceed) button, the
+	<b>No</b> button and the <b>checkbox</b> which needs to be checked for the Yes
+	button to become active.
+    </ul>
+  </li>
+<li><u><b>General settings</b></u>
+    <ul>
+      <li><b>Guest user</b> sets the name of the account to be used for "guest only" mode.</li>
+      <li><b>Guest password</b> and <b>confirm</b> the password for the guest user.</li>
+      <li><b>Allow only guest logon</b> activates/deactivates "guest only" mode.</li>
+      <li><b>Admin skips agreement and news</b> will not show the admin any of the dialogs (agreement, news) when activated.</li>
+      <li><b>Listen on port</b> sets whether to listen on a TCP port and on which. Check before with TELNET whether the respective port is free. Connecting to this port a HTML string will be returned containing data about the currently logged on user.</li>
+    </ul>
+    <div><span style="color:red; font-weight:bold;">Important note:</span> if the user/password fields
+    show with red background color, they will not be saved (i.e. passwords do not match).
+    If the passwords match these fields will appear green and the settings be written.</div>
+  </li>
+</ol>
+</body>
+</html>

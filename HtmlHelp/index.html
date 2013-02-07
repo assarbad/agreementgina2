@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <style type="text/css">
+  <!--
+  body { margin:1em; font-family:Arial; font-size:10pt; background-color:white; color:black; }
+  h1   { font-size:14pt; text-align:center; }
+  h2   { font-size:13pt; text-align:center; }
+  p    { text-align:justify; }
+  a:link    { font-weight:bold; color:blue; }
+  a:visited { font-weight:bold; color:blue; }
+  a:hover   { font-weight:bold; color:blue; }
+  a:active  { font-weight:bold; color:blue; text-decoration:underline; }
+  a:focus   { font-weight:bold; color:blue; text-decoration:underline; }
+  -->
+  </style>
+ <title>About AgreementGINA2 v.1.0</title>
+</head>
+<body>
+<h1>AgreementGINA2<br />v.1.0</h1>
+<p style="text-align:center;">
+<img src="images/assarbad.png" /><br />
+This replacement GINA is<br />
+<span style="text-align:center; color:green; font-weight:bold;">&copy; 2003-2005 by Assarbad</span><br /><br />
+</p>
+<p style="font-weight:bold;">This GINA has the following features:</p>
+<ul>
+<li>Compatible with Windows 2000 up to Windows 2003 Server.</li>
+<li>Graphical configuration facility!</li>
+<li>Fully configurable via registry (and therefore also remotely).</li>
+<li>Configuration settings take place immediately as the GINA watches its registry key for configuration changes.</li>
+<li>Showing an agreement for the usage of the machine as HTML.</li>
+<li>Forcing the user to wait a certain time before he is allowed to proceed with logon. I.e. forcing him to read the agreement.</li>
+<li>Optionally showing news (HTML).</li>
+<li>Special maintenance mode which denies logon to ordinary non-admin users.</li>
+<li>Automatic guest logon. Given a username and password for the "guest" account, the GINA will only allow admins to override this automatic logon and will else stay in logged-on mode unless being shutdown.<br />
+<span style="color:red; font-weight:bold;">IMPORTANT:</span> combining this mode with
+a restriction for the "guest" account (such as "deny local logon") will result in
+an infinite loop of reboots which can be interrupted by the override sequence F1.
+Because it is stupid to put a certain account as guest and deny it to logon this
+is an incompatibility which will not be removed in future!!!</li>
+<li>Suppressing "Lock workstation", "Change password" and "Task manager" separately and optionally for non-admin users. Admins will always see all these items.</li>
+<li>Easy credential configuration via registry. I.e. setting the username and password for "guest" can be done via registry. The GINA will take them and put them into the password stash of the system, deleting the "volatile" registry values.</li>
+<li>Optionally: Information about the logged on user (time of logon, name, domain, guest-only/maintenance/admin status) via very simple server at a configurable port!</li>
+</ul>
+<h2><a name="why">Why <u>Agreement</u>GINA2?</a></h2>
+<p>The agreement dialog is what actually started the whole project. I've had several
+trials with programs that showed an agreement when the user was already logged on
+and so on, but given the cleverness (or is it stupidity?) of some users with circumventing
+these measures I had to come up with different solutions even smarter than those users.</p>
+<p>This is when I started to think about replacing the GINA and hence preventing logon
+if the user disagreed. The first version of it was written in Delphi (version 4) and
+was in use for quite a while and has proven stable. As a side-note: I am co-admin (earlier
+admin) in a PC pool of my university.<br />
+The version written in Delphi was partially overcomplicated, but already featured a
+maintenance mode, a news message and of course the agreement dialog. But it had some
+technical deficiencies compared to this current version.</p>
+<p>The current version, written in Microsoft Visual C++ (with use of MFC), is much
+better from the technical view, but has a bigger size as well. Added were the
+feature to allow only a given guest account to log on (besides the admin of course).<br />
+Furthermore all messages can now be shown as HTML, may it be from an external or local
+URI/URL or may it be directly from content saved in the settings of AgreementGINA2.<br />
+Last but not least there is to mention the configuration dialog which allows the admin
+to configure all aspects of this GINA locally. For the future I plan to support configuration
+of multiple computers from a central location (e.g. the domain server). For now the
+admin will have to stick to the local configuration capabilities or use the well-defined
+set of registry settings which resemble the graphical configuration dialog.</p>
+<h2><a name="wishes">Questions? Wishes? Proposals? Requests?</a></h2>
+<p style="text-align:center;">Visit my website:<br />
+<a href="http://assarbad.net" target="_blank">http://assarbad.net</a><br /><br />
+or drop me a mail:<br />
+<span style="color:blue;">oliver@assarbad.net</span><br />
+<!-- Used to get all pictures (even those only contained in scripting code)
+     compiled into the CHM.                                                 -->
+<img src="images/Agreement_Notimeout01.png" width="0" height="0" alt="" />
+<img src="images/Agreement_Notimeout02.png" width="0" height="0" alt="" />
+<img src="images/Agreement_Timeout01.png" width="0" height="0" alt="" />
+<img src="images/Agreement_Timeout02.png" width="0" height="0" alt="" />
+<img src="images/Agreement_Timeout03.png" width="0" height="0" alt="" />
+<img src="images/assarbad.png" width="0" height="0" alt="" />
+<img src="images/Configuration_Dialog01.png" width="0" height="0" alt="" />
+<img src="images/News_Dialog01.png" width="0" height="0" alt="" />
+<img src="images/Registry_Settings01.png" width="0" height="0" alt="" />
+<img src="images/Security_Dialog01.png" width="0" height="0" alt="" />
+<img src="images/Telnet01.png" width="0" height="0" alt="" />
+</p>
+</body>
+</html>

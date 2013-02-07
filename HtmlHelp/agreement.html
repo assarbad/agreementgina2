@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <style type="text/css">
+  <!--
+  body { margin:1em; font-family:Arial; font-size:10pt; background-color:white; color:black; }
+  h1   { font-size:14pt; text-align:center; }
+  h2   { font-size:13pt; text-align:center; }
+  p    { text-align:justify; }
+  a:link    { font-weight:bold; color:blue; }
+  a:visited { font-weight:bold; color:blue; }
+  a:hover   { font-weight:bold; color:blue; }
+  a:active  { font-weight:bold; color:blue; text-decoration:underline; }
+  a:focus   { font-weight:bold; color:blue; text-decoration:underline; }
+  img       { border:1px dashed gray; padding: 0.2em; }
+  -->
+  </style>
+  <script type="text/javascript">
+  <!--
+  var picLo = new Array();
+  var picHi = new Array();
+  picHi[0] = new Image(); picHi[0].src = "images/Agreement_Notimeout02.png";
+  picLo[0] = new Image(); picLo[0].src = "images/Agreement_Notimeout01.png";
+  picHi[2] = new Image(); picHi[2].src = "images/Agreement_Timeout03.png";
+  picLo[2] = new Image(); picLo[2].src = "images/Agreement_Timeout02.png";
+
+  function swapImage(number, arr)
+  {
+    window.document.images[number].src = arr[number].src;
+  }
+  // -->
+  </script>
+ <title>The agreement dialog</title>
+</head>
+<body>
+<h1><a name="top">The agreement dialog</a></h1>
+<h2><a name="WhatFor">What is it for?</a></h2>
+<p>The agreement dialog allows the maintainer of a machine to force the potential user
+of a system to agree to a set of rules for usage of the system - or not being allowed
+to logon otherwise.
+There is no method to circumvent this, since the agreement is being shown before the
+actual logon (e.g. "Loading your personal settings") takes place. Hence the user has
+only the choice to agree or not.<br />
+The usage agreement is being shown directly after entering the username, password (and,
+if necessary, the domain to logon to). And this is how it looks:</p>
+<p style="text-align:center; font-size:8pt;"><img src="images/Agreement_Notimeout01.png"
+alt="The agreement dialog without timeout" onMouseOver="swapImage(0, picHi);"
+onMouseOut="swapImage(0, picLo);" /><br />Please hover the mouse over
+the picture to see how it looks if the checkbox was checked!</p>
+<h2><a name="WhatHappens">What happens if the user disagrees?</a></h2>
+<p>First of all, nothing special, there is no logging of the user actions, although
+this would be easy to implement. The user is simply denied to logon and the GINA
+invalidates the users logon token. Afterwards the logon dialog is being shown again
+were another (or the same ;) user can enter his password.<br />
+In fact this dialog is just another instance between the loading of the users profile
+and settings and entering the credentials. This step just decides whether the user is
+allowed to proceed logon, no more no less.</p>
+<h2><a name="Forcing">Forcing a user to really read ...</a></h2>
+<p>Despite the shown behavior, there is the possibility to set a timeout with maximum
+3600 seconds (i.e. 1 hour). The checkbox cannot be checked while the timeout period
+is not over:</p>
+<p style="text-align:center; font-size:8pt;"><img src="images/Agreement_Timeout01.png"
+alt="The agreement dialog with a timeout period" /><br />The user can easily recognize
+the time left to wait - see the "00:07"?</p>
+<p>After the timeout period is over, the agreement shows the same behavior as was
+demonstrated in the very first picture:</p>
+<p style="text-align:center; font-size:8pt;"><img src="images/Agreement_Timeout02.png"
+alt="The agreement dialog after timeout" onMouseOver="swapImage(2, picHi);"
+onMouseOut="swapImage(2, picLo);" /><br />Please hover the mouse over
+the picture to see how it looks if the checkbox was checked!</p>
+<h2><a name="WhatCont">What content can I put there?</a></h2>
+<p>Actually you can put anything the Internet Explorer of Windows would show. This GINA
+actually uses the IE engine to render the content. Anyway, just this would be too open
+when showing users any content. You should limit the links in the document shown to
+the absolutely necessary! AgreementGINA2 already takes measures to not allow any protocols
+but the internal <tt>about:blank</tt>, the also-internal <tt>res://</tt> and the
+<tt>http://</tt> protocols. Downloads are not being allowed - imagine someone could
+overwrite your system files while acting as SYSTEM - horrible! So all this is very
+restrictive already, but the links in the agreement document decide whether the user is
+given the chance to break "out of the box".<br />
+You can either give standard local pathes to HTML files, you can give remote URIs/URLs
+(e.g. on the domain server) or you can directly enter HTML content. Note, that the
+title of the document defines the title of the dialog!</p>
+</body>
+</html>

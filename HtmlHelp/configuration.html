@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <style type="text/css">
+  <!--
+  body { margin:1em; font-family:Arial; font-size:10pt; background-color:white; color:black; }
+  h1   { font-size:14pt; text-align:center; }
+  h2   { font-size:13pt; text-align:center; }
+  h2.describe { font-size:13pt; text-align:center; color:gray; }
+  p    { text-align:justify; }
+  a:link    { font-weight:bold; color:blue; }
+  a:visited { font-weight:bold; color:blue; }
+  a:hover   { font-weight:bold; color:blue; }
+  a:active  { font-weight:bold; color:blue; text-decoration:underline; }
+  a:focus   { font-weight:bold; color:blue; text-decoration:underline; }
+  img       { border:1px dashed gray; padding: 0.2em; }
+  -->
+  </style>
+  <script type="text/javascript">
+  <!--
+  var texts = new Array();
+  texts[ 0] = "";
+  texts[ 1] = "Settings responsible for the agreement dialog. This title appears in gray in case the agreement dialog will not show.";
+  texts[ 2] = "Use this button to test your settings for the agreement dialog!";
+  texts[ 3] = "Give here HTML code or a local or remote URI to be shown. If you start the text with < or use linebreaks the text will be interpreted as HTML code.";
+  texts[ 4] = "Determines whether the timer (i.e. countdown) should be shown. If this is checked and timeout is zero, the agreement dialog is turned off!";
+  texts[ 5] = "Determines the length of the timer countdown. If this is zero and the checkbox is checked, the agreement dialog is turned off!";
+  texts[ 6] = "Settings responsible for news and maintenance mode. This title appears in gray if neither news nor maintenance notice are being shown.";
+  texts[ 7] = "Use this button to test your settings for the news notice!";
+  texts[ 8] = texts[ 3];
+  texts[ 9] = "Use this button to test your settings for the maintenance notice!";
+  texts[10] = texts[ 3];
+  texts[11] = "Determines whether the maintenance mode is activated. If so, only admins are allowed to logon!";
+  texts[12] = "Determines whether news are being shown.";
+  texts[13] = "Disables the option for the user to lock the workstation. This overrides any policy settings when checked! It applies not to admins.";
+  texts[14] = "Disables the option for the user to change the password. This overrides any policy settings when checked! It applies not to admins.";
+  texts[15] = "Disables the task manager or allows to replace it! This overrides any policy settings when checked! It applies not to admins.";
+  texts[16] = "The text for the Yes-button in the agreement dialog.";
+  texts[17] = "The text for the No-button in the agreement dialog.";
+  texts[18] = "The text for the checkbox in the agreement dialog.";
+  texts[19] = "Sets the username, optionally domain and password for the \"guest only\" mode. If these text fields appear with red background, something went wrong and the credentials will not be saved!";
+  texts[20] = "This activates or deactivates \"guest only\" mode. In guest only mode no news, maintenance or agreement dialog will be shown. Override it by pressing F1 before the automatic logon.";
+  texts[21] = "Sets whether the admin will be shown an agreement dialog or news.";
+  texts[22] = "Set at which TCP-port the user information should be returned. If set to zero (and the field appears gray) this feature is turned off.";
+  texts[23] = "Show the about box.";
+  texts[24] = "Saves the settings without closing the dialog. This button is only active if you changed any setting(s).";
+  texts[25] = "Closes the dialog without saving the changes.";
+  texts[26] = "Saves the changes (if any) and closes the dialog.";
+
+  function showText(number)
+  {
+    window.document.getElementById("description").value = texts[number];
+  }
+  // -->
+  </script>
+ <title>Configuration dialog</title>
+</head>
+<body>
+<h1><a name="CfgDialog">Configuration dialog</a></h1>
+<h2><a name="Elements">Elements of the configuration dialog</a></h2>
+<p>Hover the mouse over the buttons and other elements of the configuration dialog in the picture
+below to see a short description. Click the respective element to read more.</p>
+<p style="text-align:center;">
+<form action="">
+<textarea id="description" name="none" cols="75" rows="3" readonly="readonly" style="font-family:Arial,sans-serif; font-size:10pt; border:1px solid gray; color:gray;">
+</textarea>
+</form>
+<img src="images/Configuration_Dialog01.png" usemap="#Configuration_Dialog01" width="477" height="438" alt="" style="border:0px none white; padding:0em;" />
+<map name="Configuration_Dialog01">
+     <area id="01" onMouseOver="showText( 1);" onMouseOut="showText(0);" shape="rect" href="#AgreementDlg" coords="12,23, 178,40">
+     <area id="02" onMouseOver="showText( 2);" onMouseOut="showText(0);" shape="rect" href="#AgreementBtn" coords="13,42, 93,70">
+     <area id="03" onMouseOver="showText( 3);" onMouseOut="showText(0);" shape="rect" href="#AgreementCont" coords="98,42, 463,81">
+     <area id="04" onMouseOver="showText( 4);" onMouseOut="showText(0);" shape="rect" href="#ShowTimer" coords="10,83, 89,103">
+     <area id="05" onMouseOver="showText( 5);" onMouseOut="showText(0);" shape="rect" href="#TimerPeriod" coords="98,83, 446,103">
+     <area id="06" onMouseOver="showText( 6);" onMouseOut="showText(0);" shape="rect" href="#NewsAndMaintenanceSettings" coords="13,109, 219,125">
+     <area id="07" onMouseOver="showText( 7);" onMouseOut="showText(0);" shape="rect" href="#NewsBtn" coords="14,128, 94,156">
+     <area id="08" onMouseOver="showText( 8);" onMouseOut="showText(0);" shape="rect" href="#NewsCont" coords="98,128, 463,167">
+     <area id="09" onMouseOver="showText( 9);" onMouseOut="showText(0);" shape="rect" href="#MaintenanceBtn" coords="13,168, 94,197">
+     <area id="10" onMouseOver="showText(10);" onMouseOut="showText(0);" shape="rect" href="#MaintenanceCont" coords="98,168, 463,205">
+     <area id="11" onMouseOver="showText(11);" onMouseOut="showText(0);" shape="rect" href="#MaintenanceCheck" coords="10,208, 170,225">
+     <area id="12" onMouseOver="showText(12);" onMouseOut="showText(0);" shape="rect" href="#NewsCheck" coords="231,208, 428,225">
+     <area id="13" onMouseOver="showText(13);" onMouseOut="showText(0);" shape="rect" href="#DisableLock" coords="10,243, 217,259">
+     <area id="14" onMouseOver="showText(14);" onMouseOut="showText(0);" shape="rect" href="#DisableChpasswd" coords="10,261, 217,276">
+     <area id="15" onMouseOver="showText(15);" onMouseOut="showText(0);" shape="rect" href="#DisableTaskman" coords="10,277, 217,317">
+     <area id="16" onMouseOver="showText(16);" onMouseOut="showText(0);" shape="rect" href="#YesText" coords="261,244, 357,273">
+     <area id="17" onMouseOver="showText(17);" onMouseOut="showText(0);" shape="rect" href="#NoText" coords="363,244, 464,273">
+     <area id="18" onMouseOver="showText(18);" onMouseOut="showText(0);" shape="rect" href="#CheckboxText" coords="233,274, 464,299">
+     <area id="19" onMouseOver="showText(19);" onMouseOut="showText(0);" shape="rect" href="#GuestCredentials" coords="9,337, 386,386">
+     <area id="20" onMouseOver="showText(20);" onMouseOut="showText(0);" shape="rect" href="#AllowGuestOnly" coords="9,387, 207,405">
+     <area id="21" onMouseOver="showText(21);" onMouseOut="showText(0);" shape="rect" href="#AdminSkips" coords="9,406, 207,424">
+     <area id="22" onMouseOver="showText(22);" onMouseOut="showText(0);" shape="rect" href="#ListenPort" coords="208,387, 386,424">
+     <area id="23" onMouseOver="showText(23);" onMouseOut="showText(0);" shape="rect" coords="395,329, 471,355">
+     <area id="24" onMouseOver="showText(24);" onMouseOut="showText(0);" shape="rect" coords="395,359, 471,383">
+     <area id="25" onMouseOver="showText(25);" onMouseOut="showText(0);" shape="rect" coords="395,384, 471,408">
+     <area id="26" onMouseOver="showText(26);" onMouseOut="showText(0);" shape="rect" coords="395,409, 471,434">
+</map>
+</p>
+<h2><a name="WhereToFind">Where to find the configuration dialog?</a></h2>
+<p>To see the real configuration dialog either install AgreementGINA2 or start the <tt>config.exe</tt>.
+But where to find the configuration dialog if AgreementGINA2 was installed? Easy, when logged on
+at the machine as admin and pressing Ctrl+Alt+Del you will see the button "Configure GINA", press
+it to configure the settings.</p>
+<p style="text-align:center;"><img src="images/Security_Dialog01.png" alt="Windows security dialog" /></p>
+<h2><a name="AllSettings">Description of all settings</a></h2>
+
+<h2 class="describe"><a name="AgreementDlg">Agreement dialog settings</a></h2>
+<p>This group of settings allows to configure the technical aspects of the
+agreement dialog, such as timeout, content to be shown and whether there should
+be a timeout period at all!<br />
+If this title is displayed in gray the agreement
+dialog will not be shown by default (which is the case in "guest only" mode and
+for the special setting, see below)!</p>
+
+<h2 class="describe"><a name="AgreementBtn">Agreement dialog - test button</a></h2>
+<p>Pressing this test button will allow you to see the currently active settings.
+Note: currently active means that changes need to be saved before you test them!</p>
+
+<h2 class="describe"><a name="AgreementCont">Agreement dialog - contents</a></h2>
+<p>The contents of the agreement dialog, as well as the other dialog with HTML
+content can have different forms how you declare the content.<br />
+Basically there are two modes:<br />
+1. URI/URL mode<br />
+2. HTML mode<br />
+The 1st mode allows you to enter a URI/URL (e.g. <tt>http://localhost/somefile</tt>)
+in which case the text field will appear with <b>blue background</b>. The 2nd mode allows
+you to enter HTML content directly. The content length is limited to 64kB, which
+you should not use to its full extent if possible because the content is being saved
+to the registry
+(it shouldn't cause problems, according to MS, but experiences from Windows 95 and 98
+are still in my mind, so use this carefully with only a few kB).<br />
+Well, how does the GINA recognize whether the content is a URL or HTML content?
+Easy: if you start your content with <tt style="color:blue;">&lt;</tt> or if the
+content contains explicit line breaks, if will be recognized as HTML content and the
+<b>text field background</b> turns <b>white</b>!<br />
+To learn more about what content is allowed, see the
+<a href="agreement.html#WhatCont">agreement dialog description</a>.</p>
+
+<h2 class="describe"><a name="ShowTimer">Agreement dialog - show timer</a></h2>
+<p>Deactivates or activates showing of the timer. There is one <b>special
+setting</b> if the box is checked, but the timeout period is set to zero:
+in this case the agreement dialog will not show at all and hence the title
+of the surrounding groupbox will be shown in gray as described
+<a href="#AgreementDlg">above</a>.</p>
+
+<h2 class="describe"><a name="TimerPeriod">Agreement dialog - timer period</a></h2>
+<p>This sets the timeout period. There is one <b>special
+setting</b> if the box is checked, but the timeout period is set to zero:
+in this case the agreement dialog will not show at all and hence the title
+of the surrounding groupbox will be shown in gray as described
+<a href="#AgreementDlg">above</a>.</p>
+
+<h2 class="describe"><a name="YesText">Agreement dialog - Yes-text</a></h2>
+<p>This defines the text which will be used for the "Yes" button. Default
+text is "Yes" which you may change for your local language. Other appropriate
+settings would be "Proceed" or "Agree".</p>
+
+<h2 class="describe"><a name="NoText">Agreement dialog - No-text</a></h2>
+<p>This defines the text which will be used for the "No" button. Default
+text is "No" which you may change for your local language. Another appropriate
+setting would be "Cancel".</p>
+
+<h2 class="describe"><a name="CheckboxText">Agreement dialog - checkbox text</a></h2>
+<p>This defines the text right to the checkbox in the agreement dialog.
+This checkbox needs to be checked for the "Yes" button to become active.</p>
+
+<h2 class="describe"><a name="NewsAndMaintenanceSettings">News and maintenance dialog settings</a></h2>
+<p>All settings for news and maintenance mode can be configured in this groupbox.
+This includes turning these modes on or off and setting their content.<br />
+If this title is displayed in gray the agreement
+dialog will not be shown by default (which is the case in "guest only" mode and
+for the special setting, see below)!</p>
+
+<h2 class="describe"><a name="NewsBtn">News dialog - test button</a></h2>
+<p>Pressing this test button will allow you to see the currently active settings.
+Note: currently active means that changes need to be saved before you test them!</p>
+
+<h2 class="describe"><a name="NewsCont">News dialog - contents</a></h2>
+<p>The contents of the news dialog, as well as the other dialog with HTML
+content can have different forms how you declare the content.<br />
+Basically there are two modes:<br />
+1. URI/URL mode<br />
+2. HTML mode<br />
+The 1st mode allows you to enter a URI/URL (e.g. <tt>http://localhost/somefile</tt>)
+in which case the text field will appear with <b>blue background</b>. The 2nd mode allows
+you to enter HTML content directly. The content length is limited to 64kB, which
+you should not use to its full extent if possible because the content is being saved
+to the registry
+(it shouldn't cause problems, according to MS, but experiences from Windows 95 and 98
+are still in my mind, so use this carefully with only a few kB).<br />
+Well, how does the GINA recognize whether the content is a URL or HTML content?
+Easy: if you start your content with <tt style="color:blue;">&lt;</tt> or if the
+content contains explicit line breaks, if will be recognized as HTML content and the
+<b>text field background</b> turns <b>white</b>!<br />
+To learn more about what content is allowed, see the
+<a href="news.html#WhatCont">news dialog description</a>.</p>
+
+<h2 class="describe"><a name="NewsCheck">News dialog - activation/deactivation</a></h2>
+<p>This simply turns the news mode on or off according to whether the checkbox is
+checked or unchecked. News mode is not active for "guest only" mode.</p>
+
+<h2 class="describe"><a name="MaintenanceBtn">Maintenance dialog - test button</a></h2>
+<p>Pressing this test button will allow you to see the currently active settings.
+Note: currently active means that changes need to be saved before you test them!</p>
+
+<h2 class="describe"><a name="MaintenanceCont">Maintenance dialog - contents</a></h2>
+<p>The contents of the maintenance dialog, as well as the other dialog with HTML
+content can have different forms how you declare the content.<br />
+Basically there are two modes:<br />
+1. URI/URL mode<br />
+2. HTML mode<br />
+The 1st mode allows you to enter a URI/URL (e.g. <tt>http://localhost/somefile</tt>)
+in which case the text field will appear with <b>blue background</b>. The 2nd mode allows
+you to enter HTML content directly. The content length is limited to 64kB, which
+you should not use to its full extent if possible because the content is being saved
+to the registry
+(it shouldn't cause problems, according to MS, but experiences from Windows 95 and 98
+are still in my mind, so use this carefully with only a few kB).<br />
+Well, how does the GINA recognize whether the content is a URL or HTML content?
+Easy: if you start your content with <tt style="color:blue;">&lt;</tt> or if the
+content contains explicit line breaks, if will be recognized as HTML content and the
+<b>text field background</b> turns <b>white</b>!<br />
+To learn more about what content is allowed, see the
+<a href="maintenance.html#WhatCont">maintenance dialog description</a>.</p>
+
+<h2 class="describe"><a name="MaintenanceCheck">Maintenance dialog - activation/deactivation</a></h2>
+<p>This simply turns the maintenance mode on or off according to whether the checkbox is
+checked or unchecked. Maintenance mode is not active for "guest only" mode.</p>
+
+<h2 class="describe"><a name="DisableLock">Windows security dialog - lock workstation</a></h2>
+<p>This disallows locking of a workstation for the logged-on user.<br />
+This setting is only valid for non-admin users, may it be in "guest only" mode or
+in any other mode. Administrative users will have the standard settings always. But be aware
+that these standard settings may be some policy which disables locking the workstation
+for admins as well.<br />
+This implies that if activated (i.e. locking disabled), the policy is being overridden
+for non-admin users, whatever it was.</p>
+
+<h2 class="describe"><a name="DisableChpasswd">Windows security dialog - change password</a></h2>
+<p>This disallows changing the password for the logged-on user.<br />
+This setting is only valid for non-admin users, may it be in "guest only" mode or
+in any other mode. Administrative users will have the standard settings always. But be aware
+that these standard settings may be some policy which disables changing the password
+for admins as well.<br />
+This implies that if activated (i.e. changing disallowed), the policy is being overridden
+for non-admin users, whatever it was.</p>
+
+<h2 class="describe"><a name="DisableTaskman">Windows security dialog - disable/replace task manager</a></h2>
+<p>This setting allows you to either disable or replace the task manager.
+And yes, replacing really means replacing the task manager completely,
+even when started through the explorer or something else.<br />
+Disabling the task manager will deactivate the button in the security dialog <u>only</u>,
+but replacing it will replace it, however you start it. Note however, that <b>the application</b>
+you use as replacement <b>must not take command line parameters</b> (i.e. it must ignore them).
+See the registry settings to learn more!<br />
+The setting is only valid for non-admin users, may it be in "guest only" mode or
+in any other mode. Administrative users will have the standard settings always. But be aware
+that these standard settings may be some policy which disables changing the password
+for admins as well.<br />
+This implies that if activated (i.e. changing disallowed), the policy is being overridden
+for non-admin users, whatever it was.</p>
+
+<h2 class="describe"><a name="GuestCredentials">Guest-only credentials</a></h2>
+<p>In these four fields you have to enter the information needed to logon the designated
+guest user (guest does not actually mean that the user has to have only guest privileges,
+any account can be used here!). If the fields appear with green background the information
+contained is at least syntactically correct (non-empty username, twice the same password),
+however <b>if it appears red this information will not be saved!</b> This means that
+the old information will still exist and be used.</p>
+
+<h2 class="describe"><a name="AllowGuestOnly">Activate/deactivate "guest only" mode</a></h2>
+<p>This activates or deactivates the "guest only" mode, according to the checkbox setting.
+Override this by holding down F1 or Shift before the automatic logon appears. This will
+allow an admin to log on.<br />The specified account
+is being logged on immediately. Logging off results in logging on with this account once
+more (except if overridden). Ideal for a kiosk mode ;)<br />
+<span style="color:red; font-weight:bold;">IMPORTANT:</span> combining this mode with
+a restriction for the "guest" account (such as "deny local logon") will result in
+an infinite loop of reboots which can be interrupted by the override sequence F1.
+Because it is stupid to put a certain account as guest and deny it to logon this
+is an incompatibility which will not be removed in future!!!</p>
+
+<h2 class="describe"><a name="AdminSkips">Admin skips dialogs</a></h2>
+<p>This setting tells the GINA that the admin should never be shown the agreement and news
+dialogs! This is the default.</p>
+
+<h2 class="describe"><a name="ListenPort">User information settings</a></h2>
+<p>User information is an optional extra feature. In our PC-pool we use it to have a central
+PHP script on the domain server which keeps a list of logged-on users. Furthermore it
+allows to create a ranking, to see who was the first logged-on user. This feature, if
+enabled will create a listening server thread in the GINA which returns information
+about the logged on user and the current status. This option allows you to configure
+the port on which the GINA will listen and return information. If set to zero (0) the
+feature is disabled.<br />
+Note: The returned information is first of all encoded as a URI (special characters
+appear as <tt>%xx</tt>, <tt>xx</tt> being a 2-digit hexadecimal character code). So
+you should first decode the string according to this scheme. Secondly the decoded
+string is in UTF-8 format. This means if you use any special characters (say cyrillic)
+these will be UTF-8 encoded and can be easily decoded into its native form (independent
+of any local settings).<br />
+The format of the returned and decoded string is as follows (also see the telnet screenshot
+below):<br />
+<pre style="padding:1em; background-color:#CCCCCC;">User#Domain#YYYY-MM-DD@hh:mm:ss#AMG#xxx.yyy.zzz.bbb</pre>
+<tt>User</tt> being the username, <tt>Domain</tt> being the domain name to which the user
+logged on, <tt>YYYY-MM-DD@hh:mm:ss</tt> being the time in an ISO-similar manner and
+<tt>AMG</tt> being the three flags which may appear in any combination.<br />
+<tt>A</tt> tells you that an administrator is logged on. <tt>M</tt> tells you that maintenance
+mode is active and <tt>G</tt> tells you that "guest only" mode is active and the respective
+guest user logged on.<br />
+The last part xxx.yyy.zzz.bbb is the version number of the installed GINA. Where
+bbb is the build number and the rest are the components of the main version number.</p>
+<p style="text-align:center;"><img src="images/Telnet01.png" alt="User information" /></p>
+<p>To test this feature connect to the machine with the installed GINA (and activated
+user information) using Telnet and the following command line.
+<pre style="padding:1em; background-color:#CCCCCC;">telnet &lt;target&gt; &lt;port&gt;</pre>
+To use this feature effectively you have to have some programming knowledge to connect
+to this port and read out the string. Perhaps some srcipts will be included in the distribution
+package soon (PHP and Perl in this case).</p>
+
+</body>
+</html>

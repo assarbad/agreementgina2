@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <style type="text/css">
+  <!--
+  body { margin:1em; font-family:Arial; font-size:10pt; background-color:white; color:black; }
+  h1   { font-size:14pt; text-align:center; }
+  h2   { font-size:13pt; text-align:center; }
+  p    { text-align:justify; }
+  a:link    { font-weight:bold; color:blue; }
+  a:visited { font-weight:bold; color:blue; }
+  a:hover   { font-weight:bold; color:blue; }
+  a:active  { font-weight:bold; color:blue; text-decoration:underline; }
+  a:focus   { font-weight:bold; color:blue; text-decoration:underline; }
+  img       { border:1px dashed gray; padding: 0.2em; }
+  -->
+  </style>
+ <title>News mode</title>
+</head>
+<body>
+<h1><a name="top">News mode</a></h1>
+<h2><a name="ToTell">If you have something to tell ...</a></h2>
+<p>You want to tell your users something and be sure they read it? Easy, turn on
+the news mode and set the content to be shown.</p>
+<p style="text-align:center;"><img src="images/News_Dialog01.png" alt="News/maintenance message dialog" /></p>
+<h2><a name="WhatCont">What content can I put there?</a></h2>
+<p>Actually you can put anything the Internet Explorer of Windows would show. This GINA
+actually uses the IE engine to render the content. Anyway, just this would be too open
+when showing users any content. You should limit the links in the document shown to
+the absolutely necessary! AgreementGINA2 already takes measures to not allow any protocols
+but the internal <tt>about:blank</tt>, the also-internal <tt>res://</tt> and the
+<tt>http://</tt> protocols. Downloads are not being allowed - imagine someone could
+overwrite your system files while acting as SYSTEM - horrible! So all this is very
+restrictive already, but the links in the agreement document decide whether the user is
+given the chance to break "out of the box".<br />
+You can either give standard local pathes to HTML files, you can give remote URIs/URLs
+(e.g. on the domain server) or you can directly enter HTML content. Note, that the
+title of the document defines the title of the dialog!</p>
+</body>
+</html>

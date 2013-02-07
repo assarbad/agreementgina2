@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\AgreementGINA]
+"AdminSkips"=dword:00000001
+"AllowOnlyGuest"=dword:00000000
+"BtnNoText"="&No"
+"BtnYesText"="&Yes"
+"CheckBoxText"=" I hereby &accept the agreement and confirm to be authorized! "
+"DisableChangePassword"=dword:00000000
+"DisableLockWorkstation"=dword:00000000
+"DisableTaskMgr"=dword:00000002
+"HTML_file"=""
+"ListenPort"=dword:00000000
+"MaintenanceMode"=dword:00000001
+"MaintenanceText"="Freshly installed GINA"
+"NewsActive"=dword:00000001
+"NewsText"=""
+"ReplacementTaskMgr"="SimpTaskman.exe"
+"ShowTimer"=dword:00000001
+"TimerDuration"=dword:00000000
+

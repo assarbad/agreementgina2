@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AgreementGINA2v.1.0">
+		<param name="Local" value="index.html#top">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Why AgreementGINA2?">
+			<param name="Local" value="index.html#why">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Questions? Wishes? Proposals? Requests?">
+			<param name="Local" value="index.html#wishes">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Settings/configuration dialog">
+		<param name="Local" value="configuration.html#CfgDialog">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Elements of the configuration dialog">
+			<param name="Local" value="configuration.html#Elements">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Where to find the configuration dialog?">
+			<param name="Local" value="configuration.html#WhereToFind">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Description of all settings">
+			<param name="Local" value="configuration.html#AllSettings">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Registry settings">
+			<param name="Local" value="registry.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AdminSkips">
+				<param name="Local" value="registry.html#a01">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AllowOnlyGuest">
+				<param name="Local" value="registry.html#a02">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="BtnNoText">
+				<param name="Local" value="registry.html#a03">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="BtnYesText">
+				<param name="Local" value="registry.html#a04">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CheckBoxText">
+				<param name="Local" value="registry.html#a05">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DisableChangePassword">
+				<param name="Local" value="registry.html#a06">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DisableLockWorkstation">
+				<param name="Local" value="registry.html#a07">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DisableTaskMgr">
+				<param name="Local" value="registry.html#a08">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="HTML_file">
+				<param name="Local" value="registry.html#a09">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ListenPort">
+				<param name="Local" value="registry.html#a10">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MaintenanceMode">
+				<param name="Local" value="registry.html#a11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MaintenanceText">
+				<param name="Local" value="registry.html#a12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="NewsActive">
+				<param name="Local" value="registry.html#a13">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="NewsText">
+				<param name="Local" value="registry.html#a14">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ReplacementTaskMgr">
+				<param name="Local" value="registry.html#a15">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ShowTimer">
+				<param name="Local" value="registry.html#a16">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TimerDuration">
+				<param name="Local" value="registry.html#a17">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GuestDomain">
+				<param name="Local" value="registry.html#a18">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GuestName">
+				<param name="Local" value="registry.html#a19">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GuestPassword">
+				<param name="Local" value="registry.html#a20">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Configuration dialog options">
+			<param name="Local" value="configuration.html#AllSettings">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Agreement dialog settings">
+				<param name="Local" value="configuration.html#AgreementDlg">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Agreement dialog - test button">
+				<param name="Local" value="configuration.html#AgreementBtn">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Agreement dialog - contents">
+				<param name="Local" value="configuration.html#AgreementCont">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Agreement dialog - show timer">
+				<param name="Local" value="configuration.html#ShowTimer">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Agreement dialog - timer period">
+				<param name="Local" value="configuration.html#TimerPeriod">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Agreement dialog - Yes-text">
+				<param name="Local" value="configuration.html#YesText">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Agreement dialog - No-text">
+				<param name="Local" value="configuration.html#NoText">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Agreement dialog - checkbox text">
+				<param name="Local" value="configuration.html#CheckboxText">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="News and maintenance dialog settings">
+				<param name="Local" value="configuration.html#NewsAndMaintenanceSettings">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="News dialog - test button">
+				<param name="Local" value="configuration.html#NewsBtn">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="News dialog - contents">
+				<param name="Local" value="configuration.html#NewsCont">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="News dialog - activation/deactivation">
+				<param name="Local" value="configuration.html#NewsCheck">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Maintenance dialog - test button">
+				<param name="Local" value="configuration.html#MaintenanceBtn">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Maintenance dialog - contents">
+				<param name="Local" value="configuration.html#MaintenanceCont">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Maintenance dialog - activation/deactivation">
+				<param name="Local" value="configuration.html#MaintenanceCheck">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Windows security dialog - lock workstation">
+				<param name="Local" value="configuration.html#DisableLock">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Windows security dialog - change password">
+				<param name="Local" value="configuration.html#DisableChpasswd">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Windows security dialog - disable/replace task manager">
+				<param name="Local" value="configuration.html#DisableTaskman">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Guest-only credentials">
+				<param name="Local" value="configuration.html#GuestCredentials">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Activate/deactivate &amp;quot;guest only&amp;quot; mode">
+				<param name="Local" value="configuration.html#AllowGuestOnly">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Admin skips dialogs">
+				<param name="Local" value="configuration.html#AdminSkips">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="User information settings">
+				<param name="Local" value="configuration.html#ListenPort">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="The agreement dialog">
+		<param name="Local" value="agreement.html#top">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What is it for?">
+			<param name="Local" value="agreement.html#WhatFor">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What happens if the user disagrees?">
+			<param name="Local" value="agreement.html#WhatHappens">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Forcing a user to really read ...">
+			<param name="Local" value="agreement.html#Forcing">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What content can I put there?">
+			<param name="Local" value="agreement.html#WhatCont">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Maintenance mode">
+		<param name="Local" value="maintenance.html#top">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What is maintenance mode?">
+			<param name="Local" value="maintenance.html#WhatIs">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What content can I put there?">
+			<param name="Local" value="maintenance.html#WhatCont">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="News mode">
+		<param name="Local" value="news.html#top">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="If you have something to tell ...">
+			<param name="Local" value="news.html#ToTell">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What content can I put there?">
+			<param name="Local" value="news.html#WhatCont">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <style type="text/css">
+  <!--
+  body { margin:1em; font-family:Arial; font-size:10pt; background-color:white; color:black; }
+  h1   { font-size:14pt; text-align:center; }
+  h2   { font-size:13pt; text-align:center; }
+  p    { text-align:justify; }
+  a:link    { font-weight:bold; color:blue; }
+  a:visited { font-weight:bold; color:blue; }
+  a:hover   { font-weight:bold; color:blue; }
+  a:active  { font-weight:bold; color:blue; text-decoration:underline; }
+  a:focus   { font-weight:bold; color:blue; text-decoration:underline; }
+  -->
+  </style>
+ <title>About AgreementGINA2 v.1.0</title>
+</head>
+<body>
+<h1>AgreementGINA2<br />v.1.0</h1>
+<p style="text-align:center;">
+<img src="../777/%231" /><br />
+This replacement GINA is<br />
+<span style="text-align:center; color:green; font-weight:bold;">&copy; 2003-2005 by Assarbad</span><br /><br />
+</p>
+<p style="font-weight:bold;">This GINA has the following features:</p>
+<ul>
+<li>Compatible with Windows 2000 up to Windows 2003 Server.</li>
+<li>Graphical configuration facility!</li>
+<li>Fully configurable via registry (and therefore also remotely).</li>
+<li>Configuration settings take place immediately as the GINA watches its registry key for configuration changes.</li>
+<li>Showing an agreement for the usage of the machine as HTML.</li>
+<li>Forcing the user to wait a certain time before he is allowed to proceed with logon. I.e. forcing him to read the agreement.</li>
+<li>Optionally showing news (HTML).</li>
+<li>Special maintenance mode which denies logon to ordinary non-admin users.</li>
+<li>Automatic guest logon. Given a username and password for the "guest" account, the GINA will only allow admins to override this automatic logon and will else stay in logged-on mode unless being shutdown.</li>
+<li>Suppressing "Lock workstation", "Change password" and "Task manager" separately and optionally for non-admin users. Admins will always see all these items.</li>
+<li>Easy credential configuration via registry. I.e. setting the username and password for "guest" can be done via registry. The GINA will take them and put them into the password stash of the system, deleting the "volatile" registry values.</li>
+<li>Optionally: Information about the logged on user (time of logon, name, domain, guest-only/maintenance/admin status) via very simple server at a configurable port!</li>
+</ul>
+<p style="font-weight:bold;">Brief version history:</p>
+<p>The first version of this software was written in Borland Delphi 4.
+Due to implementation problems I decided to rewrite the whole piece
+of software in C++, namely Visual C++ 6.0.<br />
+This is the rewrite and it comes with more features than the original
+version. E.g. it is now possible to configure the GINA directly on
+the system running it. This can be achieved by replacing the "Logoff"
+button in the Windows security dialog with the configuration for admin
+users.<br />
+For more information, check out the text files in the distribution.
+</p>
+<p><br />
+Questions? Wishes? Proposals? Requests?
+</p>
+<p style="text-align:center;">Visit my website:<br />
+<span style="color:blue;">http://assarbad.net</span><br /><br />
+or drop me a mail:<br />
+<span style="color:blue;">oliver@assarbad.net</span>
+</p>
+</body>
+</html>

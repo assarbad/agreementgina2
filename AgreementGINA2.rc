@@ -1,0 +1,388 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AGREEMENTDLG_DIALOG DIALOGEX 0, 0, 386, 225
+STYLE DS_SETFOREGROUND | DS_NOFAILCREATE | DS_CENTER | WS_POPUP | WS_CAPTION
+FONT 8, "Arial", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&No",IDC_BUTTON_NO,347,208,36,14,0,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_CHECK_AGREE,"Button",BS_AUTOCHECKBOX | BS_VCENTER | 
+                    WS_TABSTOP,3,208,305,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Yes",IDC_BUTTON_YES,310,208,36,14,0,WS_EX_CLIENTEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,
+                    3,198,305,7
+    CTEXT           "00:00",IDC_STATIC_TIMER,310,197,73,8
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,3,3,380,192
+END
+
+IDD_SHOWMESSAGEDLG DIALOGEX 0, 0, 263, 123
+STYLE DS_SETFOREGROUND | DS_NOFAILCREATE | DS_CENTER | WS_POPUP | WS_CAPTION
+FONT 8, "Arial", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDC_BUTTON_OK,104,105,54,16,0,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    0x0,2,2,259,101
+END
+
+IDD_CONFIGUREDLG DIALOGEX 0, 0, 314, 236
+STYLE DS_SETFOREGROUND | DS_NOFAILCREATE | DS_CENTER | WS_CAPTION
+FONT 8, "Arial", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Se&ttings for the agreement dialog",
+                    IDC_STATIC_SETTINGSAGREEMENT,2,2,310,48
+    PUSHBUTTON      "Agreement:",IDC_BUTTON_AGREEMENT,7,12,53,16,0,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_AGREEMENT,64,12,242,21,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_BORDER | 
+                    WS_VSCROLL,WS_EX_STATICEDGE
+    CONTROL         "Show timer",IDC_CHECK_SHOWTIMER,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,7,36,53,10
+    EDITTEXT        IDC_EDIT_TIMERDURATION,64,35,40,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CONTROL         "Spin1",IDC_SPIN_TIMERDURATION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,103,35,11,12
+    LTEXT           "[sec] (timer duration before ""Yes"" is being enabled)",
+                    IDC_STATIC_TIMERDURATION,109,37,166,8
+    GROUPBOX        "&News message and maintenance mode",
+                    IDC_STATIC_SETTINGSNEWS,2,50,310,68
+    PUSHBUTTON      "News:",IDC_BUTTON_NEWS,7,61,53,16,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_NEWS,64,61,242,21,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Maintenan.:",IDC_BUTTON_MAINTENANCE,7,84,53,16,0,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_MAINTENANCE,64,84,242,21,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_BORDER | 
+                    WS_VSCROLL,WS_EX_STATICEDGE
+    CONTROL         "Maintenance mode active",IDC_CHECK_MAINTENANCE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,7,107,134,10
+    CONTROL         "News message active",IDC_CHECK_NEWS,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,156,107,134,10
+    GROUPBOX        "&Restrictions for non-administrative users",
+                    IDC_STATIC_SETTINGSRESTRICTIONS,2,119,144,52
+    CONTROL         "Disable ""Lock workstation""",IDC_CHECK_LOCKWKSTA,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,7,127,
+                    134,10
+    CONTROL         "Disable ""Change password""",IDC_CHECK_CHANGEPASS,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,7,136,
+                    134,10
+    CONTROL         "Disable ""Task manager""",IDC_CHECK_TASKMAN,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,7,145,90,10
+    CONTROL         "Replace",IDC_CHECK_TASKMAN2,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,100,145,41,10
+    EDITTEXT        IDC_EDIT_REPLTASKMAN,7,156,115,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "&...",IDC_BUTTON_REPLTASKMAN,125,156,16,12,0,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Ca&ption of controls (agreement dialog)",
+                    IDC_STATIC_SETTINGSCAPTIONS,150,119,162,52
+    LTEXT           "Yes:",IDC_STATIC_YES,175,133,16,8
+    EDITTEXT        IDC_EDIT_YES,192,131,40,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "No:",IDC_STATIC_NO,254,133,12,8
+    EDITTEXT        IDC_EDIT_NO,266,131,40,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Checkbox:",IDC_STATIC_CHECKBOX,156,147,35,8
+    EDITTEXT        IDC_EDIT_CHECKBOX,192,145,114,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "&General settings",IDC_STATIC_GENERAL,2,172,256,62
+    RTEXT           "Guest user:",IDC_STATIC_GUESTUSER,7,184,57,8
+    EDITTEXT        IDC_EDIT_GUESTUSER,65,182,69,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Domain:",IDC_STATIC_DOMAIN,137,184,46,8
+    EDITTEXT        IDC_EDIT_GUESTDOMAIN,184,182,69,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Guest password:",IDC_STATIC_PASSWORD,7,197,57,8
+    EDITTEXT        IDC_EDIT_GUESTPASSWORD,65,195,69,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Confirm:",IDC_STATIC_PASSWORD2,137,197,46,8
+    EDITTEXT        IDC_EDIT_GUESTPASSWORD2,184,195,69,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Allow only guest logon",IDC_CHECK_ONLYGUEST,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,7,209,89,10
+    CONTROL         "Admin skips agreement and news",IDC_CHECK_ADMINSKIPS,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,7,220,
+                    125,10
+    RTEXT           "Listen on port\n (0 = don't):",IDC_STATIC_PORTNUM,137,
+                    211,46,17
+    EDITTEXT        IDC_EDIT_PORTNUM,184,214,69,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CONTROL         "Spin1",IDC_SPIN_PORTNUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,245,214,11,12
+    PUSHBUTTON      "&Save",IDC_BUTTON_SAVE,262,193,50,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Cancel",IDCANCEL,262,207,50,14,0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "&OK",IDOK,262,221,50,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&About",IDC_BUTTON_ABOUT,262,176,50,14,NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_AGREEMENTDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 383
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_SHOWMESSAGEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 261
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_CONFIGUREDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 312
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 234
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_AGREEMENTDLG_DIALOG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x3ae9, 0x0000, 0x22ba, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_SHOWMESSAGEDLG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x2834, 0x0000, 0x124b, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_ERRORAGREEMENT      HTML    DISCARDABLE     "res\\error.html"
+IDR_ERRORGENERIC        HTML    DISCARDABLE     "res\\error_generic.htm"
+IDR_HTML_ABOUT          HTML    DISCARDABLE     "res\\about.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 777
+//
+
+1                       777     DISCARDABLE     "res\\assarbad.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_LOCKWKSTA     "Security dialog does not allow ""lock computer"" for non-admin users."
+    IDC_CHECK_CHANGEPASS    "Security dialog does not allow ""change password"" for non-admin users."
+    IDC_CHECK_TASKMAN       "Security dialog does not allow ""task manager"" for non-admin users."
+    IDC_EDIT_TIMERDURATION  "Number of seconds the user is forced to read the agreement. Also see the help!"
+    IDC_CHECK_SHOWTIMER     "Show the timer to force users to read the agreement. Also see the help!"
+    IDC_EDIT_AGREEMENT      "Give the URL (local or remote) to a HTML file or HTML content! See help."
+    IDC_EDIT_YES            "Text for the ""Yes"" button in the agreement dialog."
+    IDC_EDIT_NO             "Text for the ""No"" button in the agreement dialog."
+    IDC_EDIT_CHECKBOX       "Text for the checkbox in the agreement dialog."
+    IDC_EDIT_NEWS           "Give the URL (local or remote) to a HTML file or HTML content! See help."
+    IDC_EDIT_MAINTENANCE    "Give the URL (local or remote) to a HTML file or HTML content! See help."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_EDIT_GUESTUSER      "Name of the guest user for ""guest only"" mode"
+    IDC_EDIT_GUESTPASSWORD  "Password for the guest user."
+    IDC_EDIT_PORTNUM        "Sets the port number on which GINA returns information. Also see the help!"
+    IDC_EDIT_GUESTPASSWORD2 "Confirm password for the guest user."
+    IDC_BUTTON_ABOUT        "About this GINA replacement."
+    IDC_BUTTON_SAVE         "Save the changes made."
+    IDC_EDIT_GUESTDOMAIN    "Give the domain name here. An empty string is valid for the local machine."
+    IDC_CHECK_TASKMAN2      "Replaces taskman by a simplified GUI without chance to start programs!"
+    IDC_EDIT_REPLTASKMAN    "Give full path to an alternative taskmanager! DON'T give original TASKMGR.EXE!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_FAILWINLOGON "The following message box will say that GINA failed to load and that you need to recover the system.\nJust restart, the GinaDLL value was removed and thus the standard MSGINA.DLL will be automatically loaded upon next reboot! This will only happen, if you installed this GINA on a non-supported version of Windows NT."
+    IDS_PROCESS             "Process"
+    IDS_PID                 "PID"
+    IDS_CONFIGURE           "Configure GINA"
+    IDS_RESOURCEURL         "res://%1!s!/%%23%2!d!"
+    IDS_ABOUTBLANK          "about:blank"
+    IDS_CFGDLGTITLE         "Locally configure %1!s!"
+    IDS_EXEFILTER           "Executables (*.exe)|*.exe|All Files (*.*)|*.*||"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_MAINTENANCE   "Checked = maintenance mode active (only admins are allowed to log on)"
+    IDC_CHECK_NEWS          "If checked, the news dialog will show the given HTML file."
+    IDC_BUTTON_AGREEMENT    "Agreement URL or text: click to test the content!"
+    IDC_BUTTON_NEWS         "News URL or text: click to test the content!"
+    IDC_BUTTON_MAINTENANCE  "Maintenance URL or text: click to test the content!"
+    IDC_CHECK_ONLYGUEST     "If checked, the ""guest only"" mode is active. Override by pressing F1 at logon!"
+    IDC_CHECK_ADMINSKIPS    "Admins will not see the agreement and news dialog."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDOK                    "Saves the changes (if any) and closes the dialog."
+    IDCANCEL                "Discards all changes and closes the dialog."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_AGREE         "Check this to proceed with logon process.\r\nThe agreement is binding!"
+    IDC_PROGRESS            "Wait for the timeout period and read the agreement meanwhile."
+    IDC_BUTTON_YES          "Click to proceed with logon process."
+    IDC_BUTTON_NO           "Click to disagree and cancel the logon process."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_BUTTON_REPLTASKMAN  "Click to browse for an alternative task manager."
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AgreementGINA2.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\AgreementGINA2.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.deu\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

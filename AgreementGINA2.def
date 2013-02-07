@@ -1,0 +1,30 @@
+; AgreementGINA2.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AgreementGINA"
+DESCRIPTION  'AgreementGINA2 a replacement for MSGINA.DLL'
+
+EXPORTS
+;	Install
+;	Uninstall
+	CfgDialog
+	WlxNegotiate
+	WlxInitialize
+	WlxDisplaySASNotice
+	WlxLoggedOutSAS
+	WlxActivateUserShell
+	WlxLoggedOnSAS
+	WlxDisplayLockedNotice
+	WlxWkstaLockedSAS
+	WlxIsLockOk
+	WlxIsLogoffOk
+	WlxLogoff
+	WlxShutdown
+	WlxScreenSaverNotify
+	WlxStartApplication
+	WlxNetworkProviderLoad
+	WlxDisplayStatusMessage
+	WlxGetStatusMessage
+	WlxRemoveStatusMessage
+	WlxGetConsoleSwitchCredentials
+	WlxReconnectNotify
+	WlxDisconnectNotify

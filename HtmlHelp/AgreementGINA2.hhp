@@ -1,0 +1,25 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\..\Release\AgreementGINA2.chm
+Contents file=toc.hhc
+Default Window=Main
+Default topic=index.html
+Display compile progress=Yes
+Enhanced decompilation=Yes
+Index file=Index.hhk
+Language=0x409 Englisch (USA)
+
+[WINDOWS]
+Main="AgreementGINA2 help","toc.hhc","Index.hhk","index.html","index.html",,,,,0x42120,220,0x380c,[0,0,800,600],0x830000,,,,,,0
+
+
+[FILES]
+agreement.html
+configuration.html
+index.html
+maintenance.html
+news.html
+registry.html
+
+[INFOTYPES]
+
